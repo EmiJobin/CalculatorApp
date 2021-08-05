@@ -32,6 +32,11 @@ namespace CalculatorApp
                         Console.WriteLine("Multiplication is{0}", (num1 * num2));
                         break;
                     case 4:
+                        while (num2 == 0)
+                        {
+                            Console.WriteLine("Enter a non-zero number");
+                            num2 = int.Parse(Console.ReadLine());
+                        }
                         Console.WriteLine("Division is{0}", (num1 / num2));
                         break;
                     case 5:
